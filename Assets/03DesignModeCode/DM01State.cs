@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 状态设计模式
+/// 01：状态设计模式
 /// 最简案例 2020-01-05 15:26:19
 /// </summary>
 public class DM01State : MonoBehaviour
@@ -19,8 +19,6 @@ public class DM01State : MonoBehaviour
         context.Handle(15);
         context.Handle(8);
         context.Handle(100);
-
-
     }
 }
 
