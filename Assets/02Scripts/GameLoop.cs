@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameLoop : MonoBehaviour {
+public class GameLoop : MonoBehaviour
+{
+    private SceneStateControl controller = null;
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-
     }
 
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    
+    void Start()
+    {
+        controller = new SceneStateControl();
+        //不加载场景，因为当前就是StartState场景
+        controller.SetState(new StartState(controller),false);
+    }
+    
+    void Update()
+    {
+        controller.StateUpdate();
+    }
 }

@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\02Scripts\GameLoop.cs" />
+     <Compile Include="Assets\02Scripts\SceneState\BattleState.cs" />
+     <Compile Include="Assets\02Scripts\SceneState\ISceneState.cs" />
+     <Compile Include="Assets\02Scripts\SceneState\MainMenuState.cs" />
+     <Compile Include="Assets\02Scripts\SceneState\SceneStateController.cs" />
+     <Compile Include="Assets\02Scripts\SceneState\StartState.cs" />
      <Compile Include="Assets\03DesignModeCode\DM01State.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/SystemSoftware/Unity5.6.0f3/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
