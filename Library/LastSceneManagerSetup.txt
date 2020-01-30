@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/01Scenes/01StartState.unity
+- path: Assets/01Scenes/03BattleState.unity
   isLoaded: 1
   isActive: 1
